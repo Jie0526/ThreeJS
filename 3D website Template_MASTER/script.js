@@ -1,4 +1,4 @@
-var scene, camera, renderer, clock, mixer, actions = [], mode;
+var scene, camera, renderer, clock, mixer, actions = [], mode, isWireframe = false;
 
 init();
 

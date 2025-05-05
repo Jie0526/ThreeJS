@@ -11,46 +11,46 @@ body{
 
 }
 
+/* 模型+按钮整体容器垂直居中 */
+#modelSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+
 #btn{
-    
-    background: #fea;
     padding: 15px;
     font-family: arial;
 }
 
 #toggleWireframe{
-    
-    background: #fea;
     padding: 15px;
     font-family: arial;
 }
 
 #Rotate{
-    
-    background: #fea;
     padding: 15px;
     font-family: arial;
 }
 
 #switchModel{
-    
-    background: #fea;
     padding: 15px;
     font-family: arial;
 }
 
 #playRecycleModel{
-    
-    background: #fea;
     padding: 15px;
     font-family: arial;
 }
 
+/* 模型画布区域居中显示，不撑满屏幕 */
 #threeContainer {
-    width: 100%;
-    height: 100vh;
+    width: 800px;
+    height: 500px;
     display: block;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
 #gui-container {
@@ -60,3 +60,28 @@ body{
     z-index: 1000; 
   
   }
+
+/* 按钮容器整体居中排列 */
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* 统一按钮样式 */
+#buttonContainer button {
+    background: rgb(255, 193, 170);
+    padding: 15px;
+    font-family: arial;
+    margin: 10px 0;
+    width: 300px;
+    border: 1px solid #444;
+    text-align: center;
+}
+  
+
+  
+
+

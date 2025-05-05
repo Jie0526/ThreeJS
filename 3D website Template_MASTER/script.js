@@ -15,7 +15,8 @@ function init(){
 
     // Create the scene
     scene= new THREE.Scene();
-    scene.background = new THREE.Color(0x00aaff);
+    // 修改模型画布的颜色
+    scene.background = new THREE.Color(0xe8b6b6);
 
     // Set up the camera
     camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -289,8 +290,8 @@ function animate() {
   
 function resize() {
     const canvas = document.getElementById('threeContainer');
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    const width = 800;
+    const height = 500;
 
     camera.aspect = width / height;
     camera.updateProjectionMatrix();

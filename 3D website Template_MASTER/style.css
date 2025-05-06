@@ -17,7 +17,8 @@
 */
 body {
     padding-bottom: 5px;
-    background-color: rgb(245, 164, 98);
+    background-color: 
+    rgb(255, 200, 200);
 }
 
 .main_contents {
@@ -38,8 +39,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_3d_image {
-    background-image: url(assets/images/main_3D.jpg);
+    background-image: url(assets/images/main_3d_1.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: 201px;
 }
 
@@ -53,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
 }
 #main_text h2 {
-    color: rgba(0,102,153,1);
+    color: #760003;
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -70,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 .card {
-    border: 0px solid rgba(0,0,0,.125);
+    border: 0px solid rgb(255, 177, 177);
     /* border-radius: .25rem;*/
     margin-top: 10px;
     margin-bottom: 10px;
@@ -135,13 +138,13 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS rule to overwrite the navbar-brand font color
 */
 .navbar_coca_cola .navbar-brand {
-    color: rgb(255, 179, 179);
+    color: rgb(255, 255, 255);
  }
     
 /* CSS rule to overwrite the navbar-brand font hover color
 */
 .navbar_coca_cola .navbar-brand:hover {
-    color:rgb(208, 228, 208);
+    color:rgb(255, 179, 179);
 }
 
 /* NAVIGATION MENU
@@ -154,14 +157,14 @@ There is plenty more styling to do than indicated here, in mobile it still defau
 */
 
 .navbar_coca_cola .navbar-nav > li > a {
-    color: white;  
+    color: rgb(255, 255, 255);  
 }
 
 /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
 */
 .navbar_coca_cola .navbar-nav > li > a:hover, 
 .navbar_coca_cola .navbar-nav > li > a:focus {
-    color: rgb(158, 219, 191);  
+    color: rgb(255, 179, 179);  
 }
 
 .navbar_coca_cola .navbar-nav .nav-item {
@@ -173,8 +176,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
 .navbar_coca_cola .navbar-nav .nav-item > .active, 
 .navbar_coca_cola .navbar-nav > .active > a:hover, 
 .navbar_coca_cola .navbar-nav > .active > a:focus {
-    color: white; /* Font color for active font */
-    background-color:darkgrey/* Blue color for background */
+    color: rgb(255, 255, 255); /* Font color for active font */
 }
 
 /* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
@@ -184,7 +186,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
 */
 .navbar_coca_cola .navbar-nav > li > a:hover, 
 .navbar_coca_cola  .navbar-nav > li > a:focus {
-    color:rgb(158, 219, 191);  
+    color:rgb(255, 179, 179);  
 }
 
 /* These next two CSS rules control the style of the icon bar */
@@ -254,8 +256,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
 
     #main_3d_image {
-        background-image: url(assets/images/main_3D_768.jpg);
+        background-image:url(assets/images/main_3d_1.jpg) ;
         background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
         height: 288px;
     }
 
@@ -312,8 +316,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
 
     #main_3d_image {
-        background-image: url(assets/images/main_3D_970.jpg);
+        background-image:url(assets/images/main_3d_1.jpg) ;
         background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
         height: 363px;
     }
 
@@ -430,8 +436,10 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
 
     #main_3d_image {
-        background-image: url(assets/images/main_3D_1400a.jpg);
+        background-image:url(assets/images/main_3d_1.jpg) ;
         background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
         height: 500px;
     }
 

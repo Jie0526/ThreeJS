@@ -47,39 +47,58 @@ body{
 
 /* 模型画布区域居中显示，不撑满屏幕 */
 #threeContainer {
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 800px;
     display: block;
     margin: 0 auto;
 }
 
 #gui-container {
     position: absolute;
-    top: 120px; 
-    left: 10px; 
+    top: 140px; 
+    left: 0px; 
     z-index: 1000; 
   
   }
 
-/* 按钮容器整体居中排列 */
 #buttonContainer {
+    position: fixed;
+    top: 355px;
+    right: 0px; 
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    align-items: flex-end; 
+    z-index: 1000;
 }
 
 /* 统一按钮样式 */
 #buttonContainer button {
-    background: rgb(255, 193, 170);
-    padding: 15px;
-    font-family: arial;
-    margin: 10px 0;
-    width: 300px;
-    border: 1px solid #444;
+    background: linear-gradient(90deg, #e44c4c, #9edc59, #ff9f1a);
+    color: white;
+    padding: 12px 20px;
+    font-family: Arial, sans-serif;
+    margin: 8px 0;
+    width: 220px; 
+    border: none;
+    border-radius: 6px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
+#buttonContainer button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#buttonContainer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 153, 0, 0.5);
+}
+
+
   
 
   

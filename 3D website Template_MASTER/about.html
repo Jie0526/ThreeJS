@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_button.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js"></script>
+
+  <title>About</title>
+</head>
+<body id="bodyColor">
+  <nav id="headerColor" class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+    <div class="container-fluid"> 
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+          <h1>About</h1>
+        </a>
+      </div>
+
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Drinks</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="coke.html">Coca Cola</a>
+              <a class="dropdown-item" href="sprite.html">Sprite</a>
+              <a class="dropdown-item" href="fanta.html">Fanta</a>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+
+  <h2>About</h2>
+  I created a marketing website for the Coca-Cola Company that contains three of the company's products: Coca-Cola, Sprite, and Fanta. I added a 3D model of a can and used animation and sound effects to show how the can opens, flattens, recycles, collapses, and rolls, respectively.
+  <div class="mt-4"></div>
+
+  <h2>3D models</h2>
+  To create this website, I created a 3D model of a Coke can in Blender. In Blender, I created an opening animation in which the pull ring and tab moved as if the can was being opened. I also created a separate model showing the animation of the can being pinched, recycled, knocked over and rolled.
+  <div class="mt-4"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/images/about_1.png" alt="Blender" class="img-fluid" id="image1">
+      </div>
+    </div>
+  </div>
+  <div class="mt-4"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/images/about_2.png" alt="Blender" class="img-fluid" id="image1">
+      </div>
+    </div>
+  </div>
+  <div class="mt-4"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/images/about_3.png" alt="Blender" class="img-fluid" id="image1">
+      </div>
+    </div>
+  </div>
+  <div class="mt-4"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/images/about_4.png" alt="Blender" class="img-fluid" id="image1">
+      </div>
+    </div>
+  </div>
+  <div class="mt-4"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6">
+        <img src="assets/images/about_5.png" alt="Blender" class="img-fluid" id="image1">
+      </div>
+    </div>
+  </div>
+  <div class="mt-4"></div>
+
+  <h2>Design</h2>
+  I placed the can in a bootstrap canvas. I created a navigation bar using bootstrap. I created an interactive design using CSS. I used three.js to illuminate my scene with hemispherical lights and added a light GUI spotlight that allows the user to control the lighting of the can. I used three.js to add the model to the web page. I added buttons to control the jar to open, rotate the 3D model and play pinch, recycle, knockdown and scroll animations, and I added visual effects to these buttons (hover animations and simulated presses) to increase interactivity.
+  <div class="mt-4"></div>
+
+  <h2>Integration</h2>
+  When I animated the model in blender, I already added its sound effects by adding speakers, so I directly converted the video to MP3 audio by exporting it in MP4 format to synchronise it with the animation when it loads and plays in the web page. I added images to the landing page and resized them using CSS.
+  <div class="mt-4"></div>
+
+  <h2>Interaction</h2>
+  I added track controls to move the canisters around in the web page. I created a switch button to load a second model into my HTML Bootstrap canvas.
+  <div class="mt-4"></div>
+
+  <h2>Implementation</h2>
+  I tested the site for functionality to make sure all the links worked.
+  <div class="mt-4"></div>
+
+  <h2>Deeper Understanding</h2>
+  I followed the experimental video, but replaced the products and the corresponding images and text descriptions according to my ideas, and inserted an advert video for each product that the user could click on and play, as well as making some modifications to the modelling of the products. Updates were also made to the button design, typography, animations and font colours, while I updated the big headings on each page of the layout to match the product. And I added two more animations to the three taught in the lab video (knocking over the jar and rolling the jar), and matched all five animations with the appropriate audio. In addition to this, I added two rendering effects of water droplets randomly attached to the surface of the jar and water droplets bursting out of the jar when it was opened when blender created the 3D model.
+  <div class="mt-4"></div>
+
+  <h2>Implementation and publication</h2>
+  I added an 'About' page. I have zipped my site and tested that my folder opens in Visual Studio Code after unzipping and works properly.
+  <div class="mt-4"></div>
+  
+  <br>
+
+  <script>
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('click', function() {
+        this.classList.toggle('clicked'); 
+      });
+    });
+    </script>
+  
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-text float-left copyright">
+        <p>&copy 2025 3D Web Applications</p>
+      </div>
+      <div class="navbar-text float-right social">
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+        <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

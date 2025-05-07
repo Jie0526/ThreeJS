@@ -270,7 +270,6 @@ function init(){
             }
 
             // row model
-            // Put Down 模型
             if (modelPath === 'assets/roll_fanta_can.glb') {
                 rollModelMixer = mixer;
                 rollModelActions = actions;
@@ -320,6 +319,13 @@ function init(){
 
     // Start the animation loop
     animate();
+
+    // Add Reset button logic
+const resetBtn = document.getElementById("resetModel");
+resetBtn.addEventListener('click', function () {
+    loadModel('assets/fanta_open_can.glb');
+});
+
 }
 
 function toggleWireframe(enable){

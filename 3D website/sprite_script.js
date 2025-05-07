@@ -319,6 +319,13 @@ function init(){
 
     // Start the animation loop
     animate();
+
+    // Add Reset button logic
+const resetBtn = document.getElementById("resetModel");
+resetBtn.addEventListener('click', function () {
+    loadModel('assets/sprite_open_can.glb');
+});
+
 }
 
 function toggleWireframe(enable){

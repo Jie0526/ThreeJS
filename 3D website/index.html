@@ -33,10 +33,12 @@
       const video = document.getElementById(id);
       if (video) {
         if (id === videoId) {
+          video.load();
           video.play();
         } else {
           video.pause();
           video.currentTime = 0;
+          video.load();
         }
       }
     });

@@ -5,6 +5,44 @@
     media query and change the rule
 */
 
+/* 通用按钮基础样式：全屏幕生效 */
+.find-out-btn {
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+  }
+  
+  /* Coca Cola 风格按钮 */
+  .coke-btn {
+    background-color: #b30000;
+  }
+  .coke-btn:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+  }
+  
+  /* Sprite 风格按钮 */
+  .sprite-btn {
+    background-color: #2ecc71;
+  }
+  .sprite-btn:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  /* Fanta 风格按钮 */
+  .fanta-btn {
+    background-color: #ff9500;
+  }
+  .fanta-btn:hover {
+    background-color: #e67e00;
+    transform: scale(1.05);
+  }
+  
 /* Method to declare your own fonts */
 @font-face {
     font-family: cocaColaFont;
@@ -541,4 +579,15 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     .social {
         padding-top: 7px;
     }
+
+    .find-out-btn {
+        border: none;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        border-radius: 30px;
+        padding: 10px 25px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        color: white;
+      }    
 }
+

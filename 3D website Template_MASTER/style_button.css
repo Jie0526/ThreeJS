@@ -88,15 +88,28 @@ body{
     transition: transform 0.2s ease;
 }
 
+#buttonContainer button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 153, 0, 0.5);
+}
+
 #buttonContainer button:active {
     transform: scale(0.98);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#buttonContainer button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(255, 153, 0, 0.5);
-}
+
+
+img {
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+  }
+  
+  img.clicked {
+    transform: scale(1.5);
+  }
+
+
 
 
   

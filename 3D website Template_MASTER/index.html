@@ -21,6 +21,51 @@
 <script src="https://kit.fontawesome.com/6ac3910c4e.js" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 
+<script>
+  const videoConfigs = {
+    videoCoke: "assets/images/coca_cola.jpg",
+    videoSprite: "assets/images/sprite.jpg",
+    videoFanta: "assets/images/Fanta.jpg"
+  };
+
+  function playOnly(videoId) {
+    Object.keys(videoConfigs).forEach(id => {
+      const video = document.getElementById(id);
+      if (video) {
+        if (id === videoId) {
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
+      }
+    });
+  }
+
+  function pauseVideo(videoId) {
+    const video = document.getElementById(videoId);
+    if (video) {
+      video.pause();
+    }
+  }
+
+  window.onload = function () {
+    Object.keys(videoConfigs).forEach(id => {
+      const video = document.getElementById(id);
+      if (video) {
+        video.addEventListener('ended', function () {
+          video.pause();
+          video.currentTime = 0;
+          video.load(); 
+        });
+      }
+    });
+  };
+</script>
+
+
+
+
 <title>3D Web Page</title>
 </head>
 <body id="bodyColor">
@@ -48,7 +93,7 @@
                           <a class="nav-link active" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications">About</a>
+                      <a class="nav-link" href="about.html" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="About Web 3D Applications">About</a>
                   </li>
               
                   <!-- Dropdown -->
@@ -83,42 +128,54 @@
   <br>
 
 <div class="row">
+  <!-- Coca Cola -->
   <div class="col-sm-4">
     <div class="card">
-      <a href="CocaCola">
-        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg" alt="Coca Cola"> 
-      </a>
+      <video class="card-img-top img-fluid img-thumbnail" id="videoCoke" poster="assets/images/coca_cola.jpg" width="100%" preload="none">
+        <source src="assets/videos/coca_cola.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
       <div class="card-body">
         <h3 class="card-title">Coca Cola</h3>
         <p class="card-text">Atlanta Beginnings: It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
         Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.</p>
         <a href="coke.html" class="btn btn-primary">Find out more ...</a>
+        <button class="btn btn-success mt-2" onclick="playOnly('videoCoke')">▶ Play</button>
+        <button class="btn btn-danger mt-2" onclick="pauseVideo('videoCoke')">⏸ Pause</button>
       </div>
     </div>
   </div>
 
+    <!-- Sprite -->
     <div class="col-sm-4">
       <div class="card">
-        <a href="Sprite">
-          <img class="card-img-top img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite"> 
-        </a>
+        <video class="card-img-top img-fluid img-thumbnail" id="videoSprite" poster="assets/images/sprite.jpg" width="100%" preload="none">
+          <source src="assets/videos/sprite.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <div class="card-body">
           <h3 class="card-title">Sprite</h3>
           <p class="card-text">Introduced in 1961 by The Coca-Cola Company, Sprite was created in response to the rising popularity of lemon-lime sodas. Originally developed in Germany under the name “Fanta Klare Zitrone,” Sprite was positioned as a crisp, clear alternative to market leaders like 7 Up. Its fresh taste and bold branding quickly made it a global favorite, especially among younger consumers seeking a caffeine-free refreshment.</p>
             <a href="sprite.html" class="btn btn-primary">Find out more ...</a>
+            <button class="btn btn-success mt-2" onclick="playOnly('videoSprite')">▶ Play</button>
+        <button class="btn btn-danger mt-2" onclick="pauseVideo('videoSprite')">⏸ Pause</button>
         </div>
       </div>
     </div> 
 
+      <!-- Fanta -->
       <div class="col-sm-4">
         <div class="card">
-          <a href="Fanta">
-            <img class="card-img-top img-fluid img-thumbnail" src="assets/images/Fanta.jpg" alt="Fenta"> 
-          </a>
+          <video class="card-img-top img-fluid img-thumbnail" id="videoFanta" poster="assets/images/Fanta.jpg" width="100%" preload="none">
+            <source src="assets/videos/fanta.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="card-body">
             <h3 class="card-title">Fanta</h3>
             <p class="card-text">Fanta has a unique origin dating back to 1940s Nazi Germany, during World War II. Due to a trade embargo, Coca-Cola’s German bottling plant could no longer access the syrup needed to produce Coca-Cola. In response, the local team improvised using available ingredients like whey and apple pomace to create a new drink. They called it “Fanta,” short for “Fantasie” (imagination in German). After the war, the brand was revived and reinvented with fruit flavors, becoming a vibrant symbol of fun and variety in Coca-Cola's global portfolio.</p>
               <a href="fanta.html" class="btn btn-primary">Find out more ...</a>
+              <button class="btn btn-success mt-2" onclick="playOnly('videoFanta')">▶ Play</button>
+              <button class="btn btn-danger mt-2" onclick="pauseVideo('videoFanta')">⏸ Pause</button>
           </div>
         </div>
       </div>
